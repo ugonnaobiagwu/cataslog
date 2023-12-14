@@ -8,7 +8,7 @@
 import Foundation
 
 public class Item {
-    enum PriorityLevel {
+    public enum PriorityLevel {
         case LOW
         case MEDIUM
         case HIGH
@@ -29,7 +29,7 @@ public class Item {
         }
     };
     
-    enum CompletionLevel {
+    public enum CompletionLevel {
         case NOT_STARTED
         case IN_PROGRESS
         case COMPLETE
@@ -49,18 +49,53 @@ public class Item {
             return toString;
         }
     };
-    var ItemName: String;
-    var ItemDescription: String;
-    var ItemPriorityLevel: PriorityLevel;
-    var ItemCompletionLevel: CompletionLevel;
+    var name: String;
+    var description: String;
+    var priority: PriorityLevel;
+    var completion: CompletionLevel;
+    var poster: Poster;
+    // var ItemLog: Log
+    /* public func toDictionary() -> [String: String] {
+        
+    }
+     */
     
     init() {
-        ItemName = "";
-        ItemDescription = "";
-        ItemPriorityLevel = PriorityLevel.LOW;
-        ItemCompletionLevel = CompletionLevel.NOT_STARTED;
+        name = "";
+        description = "";
+        priority = PriorityLevel.LOW;
+        completion = CompletionLevel.NOT_STARTED;
+        poster = Poster(posterNulled: true);
     }
     
+    // getting and setting
+    public func setName(name: String) {
+        self.name = name;
+    }
+    public func getName() -> String {
+       return self.name;
+    }
+    
+    public func setDescription(description: String) {
+        self.description = description;
+    }
+    public func getDescription() -> String {
+       return self.description;
+    }
+    
+    public func setPriorityLevel(level: PriorityLevel) {
+        self.priority = level;
+    }
+    public func getPriorityLevel() -> PriorityLevel {
+       return self.priority;
+    }
+    
+    public func setCompletionLevel(level: CompletionLevel) {
+        self.completion = level;
+    }
+    public func getCompletionLevel() -> CompletionLevel {
+       return self.completion;
+    }
     
     
 }
