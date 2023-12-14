@@ -14,6 +14,7 @@
 		39D715062B01AC2500B05D97 /* CatasLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D715052B01AC2500B05D97 /* CatasLogTests.swift */; };
 		39D715102B01AC2500B05D97 /* CatasLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D7150F2B01AC2500B05D97 /* CatasLogUITests.swift */; };
 		39D715122B01AC2500B05D97 /* CatasLogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D715112B01AC2500B05D97 /* CatasLogUITestsLaunchTests.swift */; };
+		39E12AFC2B27741A008BC259 /* ItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E12AFB2B27741A008BC259 /* ItemObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		39D7150B2B01AC2500B05D97 /* CatasLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatasLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D7150F2B01AC2500B05D97 /* CatasLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatasLogUITests.swift; sourceTree = "<group>"; };
 		39D715112B01AC2500B05D97 /* CatasLogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatasLogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39E12AFB2B27741A008BC259 /* ItemObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,9 @@
 		39D714F32B01AC2400B05D97 /* CatasLog */ = {
 			isa = PBXGroup;
 			children = (
+				39E12AFA2B2670ED008BC259 /* Models */,
+				39E12AF92B2670E0008BC259 /* ViewModels */,
+				39E12AF82B266FFB008BC259 /* Views */,
 				39D714F42B01AC2400B05D97 /* CatasLogApp.swift */,
 				39D714F62B01AC2400B05D97 /* ContentView.swift */,
 				39D714F82B01AC2500B05D97 /* Assets.xcassets */,
@@ -125,6 +130,28 @@
 				39D715112B01AC2500B05D97 /* CatasLogUITestsLaunchTests.swift */,
 			);
 			path = CatasLogUITests;
+			sourceTree = "<group>";
+		};
+		39E12AF82B266FFB008BC259 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39E12AF92B2670E0008BC259 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		39E12AFA2B2670ED008BC259 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39E12AFB2B27741A008BC259 /* ItemObject.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +286,7 @@
 			files = (
 				39D714F72B01AC2400B05D97 /* ContentView.swift in Sources */,
 				39D714F52B01AC2400B05D97 /* CatasLogApp.swift in Sources */,
+				39E12AFC2B27741A008BC259 /* ItemObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
